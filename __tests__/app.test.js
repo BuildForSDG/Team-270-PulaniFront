@@ -1,13 +1,15 @@
-import app from '../src/index';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../src/app';
 
 describe('app module', () => {
-  test('it exists', async () => {
-    expect(app).toBeDefined();
-  });
+	test('it exists', () => {
+		expect(App).toBeDefined();
+	});
 
-  test('it returns program name with SDGs', async () => {
-    const result = await app();
-    const sdgPos = (result || '').indexOf('SDG');
-    expect(sdgPos).toBeGreaterThanOrEqual(0);
-  });
+	test('it renders without crashing', () => {
+		const div = document.createElement('div');
+		ReactDOM.render(<App />, div);
+		ReactDOM.unmountComponentAtNode(div);
+	});
 });

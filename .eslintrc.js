@@ -5,14 +5,27 @@ module.exports = {
     node: true,
     jest: true
   },
-  extends: ['airbnb-base'],
+  settings: {
+    react: {
+      version: '16.0',
+    },
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+      experimentalObjectRestSpread: true
+    }
   },
   rules: {
     'comma-dangle': ['error', 'never'],
