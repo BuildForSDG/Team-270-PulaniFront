@@ -3,7 +3,10 @@
       "eslint --fix",
       "prettier",
   ],
-  "*.{json,css,md}": [
+  "*.{json,md}": [
       "prettier",
-  ]
+  ],
+  "*.css": [
+  		"stylelint --fix",
+  ],
 }
