@@ -23,13 +23,13 @@
     "name": "team #270",
     "email": "buildforsdg@andela.com"
   },
-  "homepage": "https://github.com/BuildForSDG/PulaniFront#readme",
+  "homepage": "https://github.com/BuildForSDG/Team-270-PulaniFront#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BuildForSDG/PulaniFront.git"
+    "url": "git+https://github.com/BuildForSDG/Team-270-PulaniFront.git"
   },
   "bugs": {
-    "url": "https://github.com/BuildForSDG/PulaniFront/issues"
+    "url": "https://github.com/BuildForSDG/Team-270-PulaniFront/issues"
   },
   "license": "MIT",
   "dependencies": {
