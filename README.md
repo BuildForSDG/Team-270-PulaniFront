@@ -1,48 +1,80 @@
-barebones setup for JavaScript / Node projects replace this with a one-liner phrase describing this project or app
+# Pulani (v1.0.0)
 
 [![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 
 ## About
 
-What is this project about. Ok to enrich here or the section above it with an image. 
-
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
-
-This is a simple JavaScript starter repo template for setting up your project. The setup contains
-
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
-
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
+We bring you an data-collection client-side that runs on top of REST API, using ES6, [React](https://facebook.github.io/react/) and [Material Design](https://material.io/).<br/>
+Our building blocks are powered by [react-admin](https://github.com/marmelab/react-admin), an open sourced project, maintained by [marmelab](https://marmelab.com/).<br/>
 
 ## Why
 
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
+Let's start at the high-level and narrow down:
+
+* No Poverty (SDG 1):
+This aims to end all forms of poverty, including extreme poverty (those living under $1.25 per day) and relative poverty (defined at a national level). Eradicating poverty is not a task of charity, it is an act of justice and the key to unlocking an enormous human potential. 
+
+* Target (Problem Statement)(2)
+HELP TACKLE EQUAL RIGHTS TO OWNERSHIP, BASIC SERVICES, TECHNOLOGY AND ECONOMIC RESOURCES.
+
+* Enter "Pulani"
+Many people start businesses, often low-level, by selling products or their services. Yet, on the contrary, there is very limited data (financial and more) about these groups of people and their activities. We believe unlocking the potential of such groups can go a long way in fighting poverty.
+
+Lack of enough data about these groups undermines their rights to mainly basic services and economic resources.
+
+Therefore, Pulani, a web app has been designed to collect data and capture key metrics from low-level entrepreneurs. The one goal for Pulani is to be a go-to data-driven platform for any party who is working (or intends to work) with the above mentioned groups.
+
+We believe that this data is vital in helping decision-makers, policy-makers and many other institutions in making informed policies and laws that we so desperately need to lift more people out of poverty.
+
+* A case of COVID-19
+The coronavirus pandemic has hit us hard, we've lost loved ones and many businesses have closed shop. And because of the lock-down, many governments have had to directly support the masses with financial or food aid.
+
+With a direct hit to most economies, the masses have slipped into utter poverty and governments are figuring out what best way to restore the situation going forward. To navigate this situation, authorities need huge data/figures/metrics (financial and more) in order to make the right decisions and implement the right programs.
 
 ## Usage
- How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
+ With a goal to encourage entreprenuers, especially the low-level, we are designing basic forms so as to capture data. The frequency of this data entry is reliant on the will of the users to do so.
+
+ * Register (get registered by an admin, or self-register)
+ * Log-in (enable personal experience)
+ * Set a goal (personal/business)
+ * Fill in a basic form (varied for product/service)
+ * Have a look at your figures (goal tracker)
+ * Sign-out (end your session)
 
 
 ## Setup
+From within the project directory, you can do this:
 
-Install `npm` or `yarn` if you dont have any of them already installed. We recommend Yarn though.
+### Clone the repo:
+$ `git clone https://github.com/BuildForSDG/Team-270-PulaniFront.git`
 
-After clonning the repo to your local machine and moving into the cloned folder, Run `yarn install` to get started by installing dependencies. 
+### Navigate to the root folder of the repo:
+$ `cd Team-270-PulaniFront`
 
-`src/index.js` is the entry to the project and source code should go into the `src` folder.
+### Install the required dependencies:
+$ `npm install`
 
-All tests should be written in the `__tests__' folder. There's a sample in there.
+This will install all the files upon which this project depends.
 
-This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others
+### Start the App:
+$ `npm start`
+
+This will serve up the app on http://localhost:1234.<br/>
+`src/index.js` is the project entry point and source code should go into the `src` folder. Any edits you make will get the page to reload and you'll also see any errors in the console.
+
+### Test the App: 
+$ `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+All tests should be written in the `__tests__' folder. 
+
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 
 #### Hints
 
-- Run `npm install` or `yarn install` to get started. We'll assume you are using Yarn.
-- Install additional dependencies: `yarn add <dependency-name> [-D]`
-- Run tests: `yarn test`
-- Run tests with test coverage info: `yarn test:cover`
-- Check the codebase for proper syntax and formatting compliance: `yarn lint`
-- Run your app in local dev mode: `yarn start`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:1234, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
+This project uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others
 
 ## Authors
 
@@ -51,9 +83,8 @@ List the team behind this project. Their names linked to their Github, LinkedIn,
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
-2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
-3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
+1.  Sector-driven data: this app is about data collection and we'd need an input from the private sector / NGOs / government on what data they need from the target groups.
+2.  Beta-users: to get early feedback, we'd like you to test the staging app and report any bugs via a form.
 
 ## Acknowledgements
 
@@ -65,4 +96,3 @@ It's powerful to always give credit.
 
 ## LICENSE
 MIT
-
