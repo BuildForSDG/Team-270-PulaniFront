@@ -17,13 +17,13 @@ Let's start at the high-level and narrow down:
 -   Target (Problem Statement)(2):<br/>
     HELP TACKLE EQUAL RIGHTS TO OWNERSHIP, BASIC SERVICES, TECHNOLOGY AND ECONOMIC RESOURCES.
 
-#### Enter "Pulani"
+### Enter "Pulani"
 
 Many people start businesses, often low-level, by selling products or their services. Yet, on the contrary, there is very limited data (financial and more) about these groups of people and their activities. Lack of enough data about these groups undermines their rights to mainly basic services and economic resources as well as our fight against poverty.
 
 **Pulani**, a web app, is designed to collect data and capture key metrics from low-level entrepreneurs. The one goal for Pulani is to be a go-to data-driven platform for any party who is working (or intends to work) with the above mentioned groups.
 
-#### A case of COVID-19:
+### A case of COVID-19
 
 The coronavirus pandemic has hit us hard, we've lost loved ones and many businesses have closed shop.<br/>Many governments have had to directly support the masses with financial or food aid because of the lock-down strategy.
 
