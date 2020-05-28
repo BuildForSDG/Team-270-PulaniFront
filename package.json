@@ -34,6 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "proxy-polyfill": "^0.3.1",
+    "ra-language-french": "^3.5.3",
     "react": "^16.9.0",
     "react-admin": "^3.3.0",
     "react-app-polyfill": "^1.0.6",
