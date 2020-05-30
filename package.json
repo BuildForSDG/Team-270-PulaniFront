@@ -17,19 +17,20 @@
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "lint": "eslint \"src/**/*.js\"",
+    "lint-md": "remark . -o",
     "start": "parcel ./src/index.html"
   },
   "author": {
     "name": "team #270",
     "email": "buildforsdg@andela.com"
   },
-  "homepage": "https://github.com/BuildForSDG/PulaniFront#readme",
+  "homepage": ".",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BuildForSDG/PulaniFront.git"
+    "url": "git+https://github.com/BuildForSDG/Team-270-PulaniFront.git"
   },
   "bugs": {
-    "url": "https://github.com/BuildForSDG/PulaniFront/issues"
+    "url": "https://github.com/BuildForSDG/Team-270-PulaniFront/issues"
   },
   "license": "MIT",
   "dependencies": {
@@ -56,11 +57,28 @@
     "parcel-bundler": "^1.12.4",
     "ra-data-json-server": "^3.5.1",
     "react-test-renderer": "^16.9.0",
+    "remark-cli": "^8.0.0",
+    "remark-preset-lint-recommended": "^4.0.0",
     "seamless-immutable": "^7.1.3",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0"
   },
-  "browserslist": [
-    "last 1 Chrome versions"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 10",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  }
 }
