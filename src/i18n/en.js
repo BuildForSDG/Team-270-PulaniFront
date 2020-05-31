@@ -2,5 +2,11 @@ import englishMessages from 'ra-language-english';
 
 export default {
   // default lang
-  ...englishMessages
+  ...englishMessages,
+  login: {
+	auth: {
+		email: 'Email',
+		password: 'password'
+	}
+  }
 };

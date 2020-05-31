@@ -1,17 +1,17 @@
 // handle authentication
 const authProvider = {
-  login: ({ username, password }) => {
+  login: ({ email, password }) => {
     const url = process.env.REACT_APP_HEROKU + '/auth/login';
 
     const request = new Request(url, {
       method: 'POST',
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ email, password }),
       headers: new Headers({ 'Content-Type': 'application/json' })
     });
     return fetch(request)
-      .then((response) => {
+      .then(response => {
         if (response.status < 200 || response.status >= 300) {
-          throw new Error('Wrong username or password. Try again!');
+          throw new Error('Wrong information. Please try again!');
         }
         return response.json();
       })

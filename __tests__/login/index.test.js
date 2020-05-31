@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../src/app';
+import PulaniLoginPage from '../../src/login';
 
 describe('app module', () => {
-	const wrapper = shallow(<App />);
+	const wrapper = shallow(<PulaniLoginPage />);
 
 	it('that it exists', () => {
 		expect(wrapper).toBeDefined();

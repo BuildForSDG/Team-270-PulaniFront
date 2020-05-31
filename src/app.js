@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Admin, fetchUtils, Resource } from 'react-admin';
 
 import dataProvider from './dataProvider';
@@ -8,7 +8,7 @@ import { PulaniLayout } from './layout';
 import PulaniLoginPage from './login';
 
 const App = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = React.useState(null);
 
   const fetchDataProvider = async () => {
     const httpClient = (url, options) => {
@@ -28,8 +28,10 @@ const App = () => {
     );
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     fetchDataProvider();
+    // cleanup
+    return () => fetchDataProvider();
   }, []);
 
   if (!data) {
@@ -39,6 +41,7 @@ const App = () => {
       </div>
     );
   }
+  
   return (
     <Admin
       title=""
