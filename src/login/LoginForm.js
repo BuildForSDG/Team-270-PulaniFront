@@ -48,10 +48,10 @@ export const LoginForm = ({ redirectTo }) => {
 
   const validate = values => {
     // once backend is updated, we'll refactor to use "phone"
-    const errors = { email: undefined, password: undefined };
+    const errors = { phone: undefined, password: undefined };
 
-    if (!values.email) {
-      errors.email = translate('ra.validation.required');
+    if (!values.phone) {
+      errors.phone = translate('ra.validation.required');
     }
     if (!values.password) {
       errors.password = translate('ra.validation.required');
@@ -88,10 +88,10 @@ export const LoginForm = ({ redirectTo }) => {
             <div className={classes.input}>
               <Field
                 autoFocus
-                id="email"
-                name="email"
+                id="phone"
+                name="phone"
                 component={Input}
-                label={translate('login.auth.email')}
+                label={translate('login.auth.phone')}
                 disabled={loading}
               />
             </div>

@@ -4,9 +4,10 @@ export default {
   // default lang
   ...englishMessages,
   login: {
-	auth: {
-		email: 'Email',
-		password: 'password'
-	}
+		auth: {
+			email: 'Email',
+			phone: 'Phone number',
+			password: 'password'
+		}
   }
 };

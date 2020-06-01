@@ -1,11 +1,11 @@
 // handle authentication
 const authProvider = {
-  login: ({ email, password }) => {
+  login: ({ phone, password }) => {
     const url = process.env.REACT_APP_HEROKU + '/auth/login';
 
     const request = new Request(url, {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ phone, password }),
       headers: new Headers({ 'Content-Type': 'application/json' })
     });
     return fetch(request)
