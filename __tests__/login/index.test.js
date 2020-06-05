@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 import PulaniLoginPage from '../../src/login';
 
 describe('app module', () => {
-	const wrapper = shallow(<PulaniLoginPage />);
+	const login = shallow(<PulaniLoginPage />);
 
 	it('that it exists', () => {
-		expect(wrapper).toBeDefined();
+		expect(login).toBeDefined();
 	});
 
 	it('that it renders without crashing', () => {
-		expect(wrapper).toMatchSnapshot();
+		expect(login).toMatchSnapshot();
 	});
 });

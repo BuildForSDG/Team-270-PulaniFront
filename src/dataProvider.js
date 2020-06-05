@@ -40,7 +40,7 @@ const dataProvider = (apiUrl, httpClient = fetchUtils.fetchJson) => {
       case GET_ONE:
         url = `${apiUrl}/${resource}/${params.id}/`;
         break;
-      case GET_LIST: {
+      case GET_LIST: { //NOPMD
         const { page, perPage } = params.pagination;
         const { field, order } = params.sort;
         const { filter } = params;
@@ -53,7 +53,7 @@ const dataProvider = (apiUrl, httpClient = fetchUtils.fetchJson) => {
         url = `${apiUrl}/${resource}/?${stringify(query)}`;
         break;
       }
-      case GET_MANY_REFERENCE: {
+      case GET_MANY_REFERENCE: { //NOPMD
         const { page, perPage } = params.pagination;
         const { field, order } = params.sort;
         const { filter, target, id } = params;
