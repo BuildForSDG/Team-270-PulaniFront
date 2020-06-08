@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../src/app';
+import { PulaniLayout } from '../../src/layout/Layout';
 
 describe('app module', () => {
-	const app = shallow(<App />);
+	const layout = shallow(<PulaniLayout />);
 
 	it('that it exists', () => {
-		expect(app).toBeDefined();
+		expect(layout).toBeDefined();
 	});
 
 	it('that it renders without crashing', () => {
-		expect(app).toMatchSnapshot();
+		expect(layout).toMatchSnapshot();
 	});
 });

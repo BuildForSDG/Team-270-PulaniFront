@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app module that it renders without crashing 1`] = `
+<AppBar
+  className="makeStyles-appBar-4"
+  userMenu={
+    <UserMenu
+      icon={<Memo(AccountCircleIcon) />}
+      label="ra.auth.user_menu"
+    />
+  }
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-title-2"
+    color="inherit"
+    id="react-admin-title"
+  />
+  <WithStyles(ForwardRef(Typography))
+    color="inherit"
+    variant="h6"
+  >
+    Pulani
+  </WithStyles(ForwardRef(Typography))>
+  <span
+    className="makeStyles-spacer-3"
+  />
+</AppBar>
+`;
