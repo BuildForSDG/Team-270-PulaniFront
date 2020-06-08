@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 import { PulaniAppBar } from '../../src/layout/AppBar';
 
 describe('app module', () => {
-	const wrapper = shallow(<PulaniAppBar />);
+	const appBar = shallow(<PulaniAppBar />);
 
 	it('that it exists', () => {
-		expect(wrapper).toBeDefined();
+		expect(appBar).toBeDefined();
 	});
 
 	it('that it renders without crashing', () => {
-		expect(wrapper).toMatchSnapshot();
+		expect(appBar).toMatchSnapshot();
 	});
 });
