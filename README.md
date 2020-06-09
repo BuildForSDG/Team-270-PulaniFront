@@ -1,6 +1,6 @@
 # Pulani (v1.0.0)
 
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/754d6c77615d474ca331cf6e023191cd)](https://www.codacy.com/gh/BuildForSDG/PulaniFront?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDG/PulaniFront&amp;utm_campaign=Badge_Grade)
 
 ## About
 
@@ -65,7 +65,7 @@ From within the project directory, you can do this:
 
 #### Hints
 
-This project uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others
+This project uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler than WebPack and the others
 
 ## Authors
 
