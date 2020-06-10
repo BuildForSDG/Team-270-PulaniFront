@@ -6,7 +6,7 @@ import authProvider from './authProvider';
 import i18nProvider from './i18n';
 import { PulaniLayout } from './layout';
 import PulaniLoginPage from './login';
-
+import { PostCreate } from './register';
 const App = () => {
   const [data, setData] = React.useState(null);
 
@@ -41,7 +41,7 @@ const App = () => {
       </div>
     );
   }
-  
+
   return (
     <Admin
       title=""
@@ -51,7 +51,7 @@ const App = () => {
       layout={PulaniLayout}
       loginPage={PulaniLoginPage}
     >
-      <Resource name="users" />
+      <Resource name="users" create={PostCreate} />
     </Admin>
   );
 };
