@@ -7,6 +7,7 @@ import i18nProvider from './i18n';
 import { PulaniLayout } from './layout';
 import { PulaniLoginPage } from './login';
 import { Dashboard } from './dashboard';
+import { PostCreate } from './register';
 
 const App = () => {
   const [data, setData] = React.useState(null);
@@ -42,7 +43,7 @@ const App = () => {
       </div>
     );
   }
-  
+
   return (
     <Admin
       title=""
@@ -53,7 +54,7 @@ const App = () => {
       loginPage={PulaniLoginPage}
       dashboard={Dashboard}
     >
-      <Resource name="users" />
+      <Resource name="users" create={PostCreate} />
     </Admin>
   );
 };
