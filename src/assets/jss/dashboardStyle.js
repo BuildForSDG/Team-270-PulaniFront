@@ -55,7 +55,7 @@ export const dashboardStyle = makeStyles(
       color: grayColor[2],
       marginTop: '0px',
       minHeight: 'auto',
-      fontWeight: '300',
+      fontWeight: '500',
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
       marginBottom: '3px',
       textDecoration: 'none',

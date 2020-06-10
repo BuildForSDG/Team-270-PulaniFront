@@ -1,6 +1,7 @@
 import React from 'react';
+import format from 'date-fns/format';
 import ChartistGraph from 'react-chartist';
-
+import clsx from 'clsx';
 import Icon from '@material-ui/core/Icon';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import Store from '@material-ui/icons/Store';
@@ -29,8 +30,23 @@ import { dashboardStyle } from '../assets/jss';
 export const Dashboard = () => {
   const classes = dashboardStyle();
 
+  let firstName = sessionStorage.getItem('firstName'),
+       lastName = sessionStorage.getItem('lastName');  
+
   return (
     <div>
+      <GridContainer>
+        <GridItem xs={12}>
+          <Card>
+            <CardBody color='success'>
+              <h2 className={classes.cardTitle}>
+                Hi, {firstName}&nbsp;{lastName} 
+                <span className={clsx('date')}>{format(new Date(), 'MMMM, DD')}</span>
+              </h2>
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
       <GridContainer>
         <GridItem xs={12} sm={6} md={4}>
           <Card>
@@ -38,7 +54,7 @@ export const Dashboard = () => {
               <CardIcon color='success'>
                 <AttachMoney />
               </CardIcon>
-              <p className={classes.cardCategory}>Income</p>
+              <p className={classes.cardCategory}>Income Goal</p>
               <h3 className={classes.cardTitle}>UGX. 50,000</h3>
             </CardHeader>
             <CardFooter stats>
@@ -55,7 +71,7 @@ export const Dashboard = () => {
               <CardIcon color='warning'>
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Savings</p>
+              <p className={classes.cardCategory}>Savings Target</p>
               <h3 className={classes.cardTitle}>UGX. 500,000</h3>
             </CardHeader>
             <CardFooter stats>
@@ -72,7 +88,7 @@ export const Dashboard = () => {
               <CardIcon color='danger'>
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>Budget</p>
+              <p className={classes.cardCategory}>Budget Limit</p>
               <h3 className={classes.cardTitle}>UGX. 75,000</h3>
             </CardHeader>
             <CardFooter stats>
@@ -97,7 +113,7 @@ export const Dashboard = () => {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Daily Sales</h4>
+              <h4 className={classes.cardTitle}>Your daily sales</h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
@@ -125,7 +141,7 @@ export const Dashboard = () => {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Savings Trends</h4>
+              <h4 className={classes.cardTitle}>Your savings trends</h4>
               <p className={classes.cardCategory}>last year&rsquo;s performance</p>
             </CardBody>
             <CardFooter chart>
@@ -147,7 +163,7 @@ export const Dashboard = () => {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Budget Management</h4>
+              <h4 className={classes.cardTitle}>Your tracked expenses</h4>
               <p className={classes.cardCategory}>last month trends</p>
             </CardBody>
             <CardFooter chart>

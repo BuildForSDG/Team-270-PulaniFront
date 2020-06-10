@@ -125,3 +125,8 @@ code {
 .ct-label {
   color: #fff !important;
 }
+
+.date {
+  float: right;
+  font-weight: 300 !important;
+}

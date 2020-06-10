@@ -15,12 +15,16 @@ const authProvider = {
         }
         return response.json();
       })
-      .then(({ token }) => {
+      .then(({ token, user }) => {
         sessionStorage.setItem('token', token);
+        sessionStorage.setItem('firstName', user.firstName);
+        sessionStorage.setItem('lastName', user.lastName);
       });
   },
   logout: () => {
     sessionStorage.removeItem('token');
+    sessionStorage.removeItem('firstName');
+    sessionStorage.removeItem('lastName');
     return Promise.resolve();
   },
   checkError: (error) => {
