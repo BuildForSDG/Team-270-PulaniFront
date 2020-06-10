@@ -5,7 +5,8 @@ import dataProvider from './dataProvider';
 import authProvider from './authProvider';
 import i18nProvider from './i18n';
 import { PulaniLayout } from './layout';
-import PulaniLoginPage from './login';
+import { PulaniLoginPage } from './login';
+import { Dashboard } from './dashboard';
 
 const App = () => {
   const [data, setData] = React.useState(null);
@@ -50,6 +51,7 @@ const App = () => {
       i18nProvider={i18nProvider}
       layout={PulaniLayout}
       loginPage={PulaniLoginPage}
+      dashboard={Dashboard}
     >
       <Resource name="users" />
     </Admin>

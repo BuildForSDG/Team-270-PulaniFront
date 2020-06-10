@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 import * as serviceWorker from './serviceWorker';
-import './stylesheets/index.css';
+import './stylesheets/index.min.css';
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.register();
