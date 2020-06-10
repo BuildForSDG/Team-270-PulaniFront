@@ -125,7 +125,7 @@ export const savingsTrendsChart = {
 // Budget Management
 
 export const budgetTrackerChart = {
-  data: {
+  values: {
     labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
     series: [[20, 35, 55, 40]]
   },
@@ -143,25 +143,25 @@ export const budgetTrackerChart = {
     }
   },
   animation: {
-    draw: function(data) {
-      if (data.type === 'line' || data.type === 'area') {
-        data.element.animate({
+    draw: function(values) {
+      if (values.type === 'line' || values.type === 'area') {
+        values.element.animate({
           d: {
             begin: 600,
             dur: 700,
-            from: data.path
+            from: values.path
               .clone()
               .scale(1, 0)
-              .translate(0, data.chartRect.height())
+              .translate(0, values.chartRect.height())
               .stringify(),
-            to: data.path.clone().stringify(),
+            to: values.path.clone().stringify(),
             easing: Chartist.Svg.Easing.easeOutQuint
           }
         });
-      } else if (data.type === 'point') {
-        data.element.animate({
+      } else if (values.type === 'point') {
+        values.element.animate({
           opacity: {
-            begin: (data.index + 1) * delays,
+            begin: (values.index + 1) * delays,
             dur: durations,
             from: 0,
             to: 1,

@@ -116,17 +116,17 @@ code {
   }
 }
 
-.ct-series-a .ct-line,
-.ct-series-a .ct-point,
-.ct-series-a .ct-bar {
-  stroke: #fff !important;
+.ct-pulani .ct-series-a .ct-line,
+.ct-pulani .ct-series-a .ct-point,
+.ct-pulani .ct-series-a .ct-bar {
+  stroke: #fff;
 }
 
-.ct-label {
-  color: #fff !important;
+.ct-pulani .ct-label {
+  color: #fff;
 }
 
 .date {
   float: right;
-  font-weight: 300 !important;
+  font-weight: 300;
 }

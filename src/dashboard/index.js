@@ -105,7 +105,7 @@ export const Dashboard = () => {
           <Card chart>
             <CardHeader color='success'>
               <ChartistGraph
-                className='ct-chart'
+                className='ct-pulani'
                 data={dailySalesChart.data}
                 type='Line'
                 options={dailySalesChart.options}
@@ -132,7 +132,7 @@ export const Dashboard = () => {
           <Card chart>
             <CardHeader color='warning'>
               <ChartistGraph
-                className='ct-chart'
+                className='ct-pulani'
                 data={savingsTrendsChart.data}
                 type='Bar'
                 options={savingsTrendsChart.options}
@@ -155,8 +155,8 @@ export const Dashboard = () => {
           <Card chart>
             <CardHeader color='danger'>
               <ChartistGraph
-                className='ct-chart'
-                data={budgetTrackerChart.data}
+                className='ct-pulani'
+                data={budgetTrackerChart.values}
                 type='Line'
                 options={budgetTrackerChart.options}
                 listener={budgetTrackerChart.animation}
