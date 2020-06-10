@@ -115,3 +115,13 @@ code {
     transform: rotate(360deg);
   }
 }
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-bar {
+  stroke: #fff !important;
+}
+
+.ct-label {
+  color: #fff !important;
+}

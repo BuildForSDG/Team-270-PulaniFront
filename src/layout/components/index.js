@@ -1,3 +1,3 @@
 export * from './Card';
+export * from './Charts';
 export * from './Grid';
-export * from './Typography';
