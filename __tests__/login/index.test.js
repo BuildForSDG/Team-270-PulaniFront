@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../src/app';
+import PulaniLoginPage from '../../src/login';
 
 describe('app module', () => {
-	const app = shallow(<App />);
+	const login = shallow(<PulaniLoginPage />);
 
 	it('that it exists', () => {
-		expect(app).toBeDefined();
+		expect(login).toBeDefined();
 	});
 
 	it('that it renders without crashing', () => {
-		expect(app).toMatchSnapshot();
+		expect(login).toMatchSnapshot();
 	});
 });
