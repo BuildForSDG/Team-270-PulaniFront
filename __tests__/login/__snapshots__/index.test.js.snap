@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`app module that it renders without crashing 1`] = `
+exports[`<Login/> module that it renders without crashing 1`] = `
 <Login
   className="PulaniLogin-login-1"
   theme={
