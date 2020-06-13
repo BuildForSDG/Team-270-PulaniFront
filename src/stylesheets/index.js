@@ -17,6 +17,7 @@ export const layoutStyle = makeStyles(
      * Ref: ra-ui-materialui/src/layout/Layout.js
      */
     root: {
+      backgroundColor: '#eeeeee !important',
       '& header': {
         '& p[class*=title]': {
           fontSize: '1.15rem'

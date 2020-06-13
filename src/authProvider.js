@@ -1,7 +1,9 @@
 // handle authentication
-const authProvider = {
+export const API = 'https://pulani2.herokuapp.com/api/v1';
+
+export const authProvider = {
   login: ({ phone, password }) => {
-    const url = process.env.REACT_APP_HEROKU + '/auth/login';
+    const url = API + '/auth/login';
 
     const request = new Request(url, {
       method: 'POST',
@@ -15,12 +17,16 @@ const authProvider = {
         }
         return response.json();
       })
-      .then(({ token }) => {
+      .then(({ token, user }) => {
         sessionStorage.setItem('token', token);
+        sessionStorage.setItem('firstName', user.firstName);
+        sessionStorage.setItem('lastName', user.lastName);
       });
   },
   logout: () => {
     sessionStorage.removeItem('token');
+    sessionStorage.removeItem('firstName');
+    sessionStorage.removeItem('lastName');
     return Promise.resolve();
   },
   checkError: (error) => {
@@ -37,5 +43,3 @@ const authProvider = {
   },
   getPermissions: () => Promise.resolve()
 };
-
-export default authProvider;

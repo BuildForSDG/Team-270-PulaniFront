@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PulaniLoginPage from '../../src/login';
+import { PulaniLoginPage } from '../../src/login';
 
-describe('app module', () => {
+describe('<Login/> module', () => {
 	const login = shallow(<PulaniLoginPage />);
 
 	it('that it exists', () => {

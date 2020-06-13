@@ -4,7 +4,7 @@ import { LoginForm } from './LoginForm';
 
 import { PulaniTheme, loginStyle } from '../stylesheets';
 
-const PulaniLoginPage = (props) => {
+export const PulaniLoginPage = props => {
 	const classes = loginStyle();
 
 	return (
@@ -17,5 +17,3 @@ const PulaniLoginPage = (props) => {
 		</Login>
 	);
 };
-
-export default PulaniLoginPage;

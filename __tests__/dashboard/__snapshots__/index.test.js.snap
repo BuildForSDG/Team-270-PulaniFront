@@ -1,0 +1,426 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard/> module that it renders without crashing 1`] = `
+<div>
+  <GridContainer>
+    <GridItem
+      xs={12}
+    >
+      <Card>
+        <CardBody
+          color="success"
+        >
+          <h2
+            className="PulaniDashboard-cardTitle-6"
+          >
+            Hi, 
+             
+            <span
+              className="date"
+            >
+              June, 10
+            </span>
+          </h2>
+        </CardBody>
+      </Card>
+    </GridItem>
+  </GridContainer>
+  <GridContainer>
+    <GridItem
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <Card>
+        <CardHeader
+          color="success"
+          icon={true}
+          stats={true}
+        >
+          <CardIcon
+            color="success"
+          >
+            <AttachMoneyIcon />
+          </CardIcon>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            Income Goal
+          </p>
+          <h3
+            className="PulaniDashboard-cardTitle-6"
+          >
+            UGX. 50,000
+          </h3>
+        </CardHeader>
+        <CardFooter
+          stats={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <UpdateIcon />
+            Daily Income
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+    <GridItem
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <Card>
+        <CardHeader
+          color="warning"
+          icon={true}
+          stats={true}
+        >
+          <CardIcon
+            color="warning"
+          >
+            <WithStyles(ForwardRef(Icon))>
+              content_copy
+            </WithStyles(ForwardRef(Icon))>
+          </CardIcon>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            Savings Target
+          </p>
+          <h3
+            className="PulaniDashboard-cardTitle-6"
+          >
+            UGX. 500,000
+          </h3>
+        </CardHeader>
+        <CardFooter
+          stats={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <LocalOfferIcon />
+            Annual Savings
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+    <GridItem
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <Card>
+        <CardHeader
+          color="danger"
+          icon={true}
+          stats={true}
+        >
+          <CardIcon
+            color="danger"
+          >
+            <StoreIcon />
+          </CardIcon>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            Budget Limit
+          </p>
+          <h3
+            className="PulaniDashboard-cardTitle-6"
+          >
+            UGX. 75,000
+          </h3>
+        </CardHeader>
+        <CardFooter
+          stats={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <DateRangeIcon />
+            Monthly Budget
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+  </GridContainer>
+  <GridContainer>
+    <GridItem
+      md={4}
+      sm={12}
+      xs={12}
+    >
+      <Card
+        chart={true}
+      >
+        <CardHeader
+          color="success"
+        >
+          <ChartistGraph
+            className="ct-chart"
+            data={
+              Object {
+                "labels": Array [
+                  "M",
+                  "T",
+                  "W",
+                  "T",
+                  "F",
+                  "S",
+                  "S",
+                ],
+                "series": Array [
+                  Array [
+                    12,
+                    17,
+                    7,
+                    17,
+                    23,
+                    18,
+                    38,
+                  ],
+                ],
+              }
+            }
+            listener={
+              Object {
+                "draw": [Function],
+              }
+            }
+            options={
+              Object {
+                "chartPadding": Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                },
+                "high": 50,
+                "lineSmooth": [Function],
+                "low": 0,
+              }
+            }
+            type="Line"
+          />
+        </CardHeader>
+        <CardBody>
+          <h4
+            className="PulaniDashboard-cardTitle-6"
+          >
+            Your daily sales
+          </h4>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            <span
+              className="PulaniDashboard-successText-1"
+            >
+              <ArrowUpwardIcon
+                className="PulaniDashboard-upArrowCardCategory-2"
+              />
+               55%
+            </span>
+             
+            increase in today sales.
+          </p>
+        </CardBody>
+        <CardFooter
+          chart={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <AccessTimeIcon />
+             updated 4 minutes ago
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+    <GridItem
+      md={4}
+      sm={12}
+      xs={12}
+    >
+      <Card
+        chart={true}
+      >
+        <CardHeader
+          color="warning"
+        >
+          <ChartistGraph
+            className="ct-chart"
+            data={
+              Object {
+                "labels": Array [
+                  "Jan",
+                  "Feb",
+                  "Mar",
+                  "Apr",
+                  "Mai",
+                  "Jun",
+                  "Jul",
+                  "Aug",
+                  "Sep",
+                  "Oct",
+                  "Nov",
+                  "Dec",
+                ],
+                "series": Array [
+                  Array [
+                    42,
+                    85,
+                    85,
+                    85,
+                    138,
+                    181,
+                    181,
+                    215,
+                    215,
+                    225,
+                    281,
+                    366,
+                  ],
+                ],
+              }
+            }
+            listener={
+              Object {
+                "draw": [Function],
+              }
+            }
+            options={
+              Object {
+                "axisX": Object {
+                  "showGrid": false,
+                },
+                "chartPadding": Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 5,
+                  "top": 0,
+                },
+                "high": 500,
+                "low": 0,
+              }
+            }
+            responsiveOptions={
+              Array [
+                Array [
+                  "screen and (max-width: 640px)",
+                  Object {
+                    "axisX": Object {
+                      "labelInterpolationFnc": [Function],
+                    },
+                    "seriesBarDistance": 5,
+                  },
+                ],
+              ]
+            }
+            type="Bar"
+          />
+        </CardHeader>
+        <CardBody>
+          <h4
+            className="PulaniDashboard-cardTitle-6"
+          >
+            Your savings trends
+          </h4>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            last year’s performance
+          </p>
+        </CardBody>
+        <CardFooter
+          chart={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <AccessTimeIcon />
+             updated last year
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+    <GridItem
+      md={4}
+      sm={12}
+      xs={12}
+    >
+      <Card
+        chart={true}
+      >
+        <CardHeader
+          color="danger"
+        >
+          <ChartistGraph
+            className="ct-chart"
+            data={
+              Object {
+                "labels": Array [
+                  "Week 1",
+                  "Week 2",
+                  "Week 3",
+                  "Week 4",
+                ],
+                "series": Array [
+                  Array [
+                    20,
+                    35,
+                    55,
+                    40,
+                  ],
+                ],
+              }
+            }
+            listener={
+              Object {
+                "draw": [Function],
+              }
+            }
+            options={
+              Object {
+                "chartPadding": Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                },
+                "high": 75,
+                "lineSmooth": [Function],
+                "low": 0,
+              }
+            }
+            type="Line"
+          />
+        </CardHeader>
+        <CardBody>
+          <h4
+            className="PulaniDashboard-cardTitle-6"
+          >
+            Your tracked expenses
+          </h4>
+          <p
+            className="PulaniDashboard-cardCategory-4"
+          >
+            last month trends
+          </p>
+        </CardBody>
+        <CardFooter
+          chart={true}
+        >
+          <div
+            className="PulaniDashboard-stats-3"
+          >
+            <AccessTimeIcon />
+             updated last week
+          </div>
+        </CardFooter>
+      </Card>
+    </GridItem>
+  </GridContainer>
+</div>
+`;

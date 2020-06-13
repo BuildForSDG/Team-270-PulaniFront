@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`app module that it renders without crashing 1`] = `
+exports[`<AppBar/> module that it renders without crashing 1`] = `
 <AppBar
   className="makeStyles-appBar-4"
   userMenu={

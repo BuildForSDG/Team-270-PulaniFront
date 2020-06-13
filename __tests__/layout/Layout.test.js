@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { PulaniLayout } from '../../src/layout/Layout';
 
-describe('app module', () => {
+describe('<Layout/> module', () => {
 	const layout = shallow(<PulaniLayout />);
 
 	it('that it exists', () => {

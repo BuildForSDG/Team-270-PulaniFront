@@ -115,3 +115,18 @@ code {
     transform: rotate(360deg);
   }
 }
+
+.ct-pulani .ct-series-a .ct-line,
+.ct-pulani .ct-series-a .ct-point,
+.ct-pulani .ct-series-a .ct-bar {
+  stroke: #fff;
+}
+
+.ct-pulani .ct-label {
+  color: #fff;
+}
+
+.date {
+  float: right;
+  font-weight: 300;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { PulaniAppBar } from '../../src/layout/AppBar';
 
-describe('app module', () => {
+describe('<AppBar/> module', () => {
 	const appBar = shallow(<PulaniAppBar />);
 
 	it('that it exists', () => {

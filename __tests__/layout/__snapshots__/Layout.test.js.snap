@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`app module that it renders without crashing 1`] = `
+exports[`<Layout/> module that it renders without crashing 1`] = `
 <LayoutWithTheme
   appBar={[Function]}
   className="PulaniLayout-root-1"

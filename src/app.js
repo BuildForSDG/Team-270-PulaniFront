@@ -2,11 +2,13 @@ import React from 'react';
 import { Admin, fetchUtils, Resource } from 'react-admin';
 
 import dataProvider from './dataProvider';
-import authProvider from './authProvider';
+import { API, authProvider } from './authProvider';
 import i18nProvider from './i18n';
 import { PulaniLayout } from './layout';
-import PulaniLoginPage from './login';
+import { PulaniLoginPage } from './login';
+import { Dashboard } from './dashboard';
 import { PostCreate } from './register';
+
 const App = () => {
   const [data, setData] = React.useState(null);
 
@@ -20,7 +22,7 @@ const App = () => {
       return fetchUtils.fetchJson(url, options);
     };
 
-    let dataProviderInstance = await dataProvider(process.env.REACT_APP_HEROKU, httpClient);
+    let dataProviderInstance = await dataProvider(API, httpClient);
 
     setData(
       // NOTE: dataProviderInstance can be a function
@@ -50,6 +52,7 @@ const App = () => {
       i18nProvider={i18nProvider}
       layout={PulaniLayout}
       loginPage={PulaniLoginPage}
+      dashboard={Dashboard}
     >
       <Resource name="users" create={PostCreate} />
     </Admin>
